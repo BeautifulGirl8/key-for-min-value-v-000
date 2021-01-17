@@ -1,19 +1,15 @@
-# prereqs: iterators, hashes, conditional logic
-# Given a hash with numeric values, return the key for the smallest value
-winner = ""
-passengers.each do |suite, name|
-  if suite == :suite_a && name.start_with?("A")
-    winner = name
-  end
-end
- 
-winner
 
 
-
-def key_for_min_value(keys, values)
+def key_for_min_value(name_hash)
+  min_key = nil
+  min_value = nil   
   
-name_hash.collect do {|value| |a,b| a <=> b}
+name_hash.each do |hey, value| 
 
-end
-values
+ if min_value == nil 
+
+min_key = key
+ min_value = value 
+
+ elseif value < min_value
+   min_key 
