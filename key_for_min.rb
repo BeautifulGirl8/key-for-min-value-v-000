@@ -8,10 +8,10 @@ name_hash.each do |hey, value|
 
  if min_value == nil
 
-min_key = key
+  min_key = key
  min_value = value
 
- elseif value < min_value
+ else value < min_value
    min_key
 
 end
